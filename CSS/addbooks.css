@@ -1,0 +1,19 @@
+.add-books{
+        width: 85.7%;
+        height: 90%;
+        margin-top: 68px;
+        left: 209px;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.563);
+        color:white ;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+}
+
+.hidden{
+    display: none;
+}
+

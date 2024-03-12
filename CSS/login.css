@@ -1,0 +1,216 @@
+*{
+  margin: 3;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+body{
+  
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  height: 90px;
+  background-color: #05025cb2;
+  display: flex;
+  backdrop-filter: blur(4px);
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 1px 30px 1px;
+}
+
+.header img{
+  margin-left: 30px;
+  height: 80px;
+}
+
+.header h2{
+  color: rgb(186, 225, 57);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.container{
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 84.5vh;
+  background: rgba(57, 57, 57, 0.033);
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 1px 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form{
+  width: 300px;
+  height: 300px;
+  background: #5b5b5c9d;
+  border-radius: 7px;
+  backdrop-filter: blur(5px);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form p {
+  color: azure;
+  font-size: 20px;
+}
+.form button{
+  border-radius: 7px;
+  border: 2px solid white;
+
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
+}
+.form button{
+  background-color: rgba(0, 0, 255, 0.74);
+  color: white;
+}
+
+.form button#adminbutton{
+  background-color: rgba(255, 0, 0, 0.665);
+  color: white;
+}
+
+.form button:hover,.form button#adminbutton:hover{
+background-color: rgba(0, 0, 0, 0.768);
+color: white;
+font-size: 18px;
+}
+.glass-container {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.124);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+
+.glass-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.login-box {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus {
+  outline:2px solid white;
+  border: none;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: white;
+}
+
+.options input {
+  margin-right: 5px;
+  margin-top: 0px;
+}
+
+.options a {
+  text-decoration: none;
+  color: blue;
+  margin-left: auto;
+}
+
+.options label{
+  color: black;
+}
+
+button {
+  background: #3847eed8;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: transparent;
+  color: #222;
+  outline: 2px solid #222;
+}
+
+p {
+  font-size: 12px;
+  color: black;
+  margin-top: 15px;
+}
+
+#register {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.backbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 8px;
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-right: 10px;  
+  background: rgba(49, 49, 49, 0.258);
+
+}
+
+

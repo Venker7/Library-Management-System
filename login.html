@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="CSS/login.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="header">
+      <img src="Manipur_Technical_University_logo.png">
+      <h2>Library Management System</h2>
+    </div>    
+    <div class="container">
+        <div class="form" id="buttonform">
+          <p>Login as</p>
+          <button onclick="userlogin('userloginform')">User</button><p>or</p><button onclick="adminlogin('adminloginform')" id="adminbutton">Admin</button>
+        </div>
+      
+        <div class="glass-container Ulogin hidden" id="userloginform">
+          <button class="backbutton" onclick="gotoform('buttonform')">X</button>
+          <div class="login-box">
+              <h2>Login as User</h2>
+              <form action="#" method="POST">
+  
+                  <input type="email" placeholder="Enter MTU emailID">
+                  
+                  <input type="text" placeholder="Enter Library ID Number">
+                  
+                  <div class="options">
+                      <input type="checkbox" id="remember" name="remember">
+                      <label for="remember">Remember me</label>
+                      <a href="#">Forgot Password?</a>
+                  </div>
+                  
+                  <button type="submit">Login</button>
+  
+                  <p>Don't have an account? <a id="register" onclick="usersignup('Usignup')">Register</a></p>
+              </form>
+          </div>
+      </div>
+      <div class="glass-container Usignup hidden" id="Usignup">
+        <button class="backbutton" onclick="gotoUlogin('userloginform')">X</button>
+
+        <div class="login-box">
+            <h2>Sign up as User</h2>
+            <form action="#" method="POST">
+
+                <input type="text" id="username" name="username" required placeholder="Username">
+                
+                <input type="email" placeholder="Enter MTU emailID">
+                <input type="text" required placeholder="Enter Registration Number">
+
+                <button type="submit">Sign up</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="glass-container Llogin hidden" id="adminloginform">
+      <button class="backbutton" onclick="gotoform('adminloginform')">X</button>
+
+      <div class="login-box">
+          <h2>Login as Librarian</h2>
+          <form action="#" method="POST">
+
+              <input type="text" placeholder="Enter name">
+              
+              <input type="text" placeholder="Enter Library ID Number">
+              
+              <div class="options">
+                  <input type="checkbox" id="remember" name="remember">
+                  <label for="remember">Remember me</label>
+                  <a href="#">Forgot Password?</a>
+              </div>
+              
+              <button type="submit">Login</button>
+
+              <p>Don't have an account? <a id="register" onclick="librariansignup('Lsignup')">Register</a></p>
+          </form>
+      </div>
+      
+  </div>
+      
+  <div class="glass-container Lsignup hidden" id="Lsignup">
+    <button class="backbutton" onclick="gotoAlogin('adminloginform')">X</button>
+
+    <div class="login-box">
+        <h2>Sign up as Librarian</h2>
+        <form action="#" method="POST">
+
+            <input type="text" id="username" name="username" required placeholder="Username">
+            
+            <input type="email" placeholder="Enter MTU emailID">
+            <input type="text" required placeholder="Enter Registration Number">
+
+            <button type="submit">Sign up</button>
+
+        </form>
+    </div>
+</div>
+    
+      
+    </div>
+    <script src="JS/login.js"></script>
+  
+</body>
+
+</html>

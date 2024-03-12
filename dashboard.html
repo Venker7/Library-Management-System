@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="CSS/addbooks.css">
+    <link rel="stylesheet" href="CSS/issue-books.css">
+</head>
+<body>
+    <div class="background">
+        <nav class="sidebar">
+            <div class="title"><h1>LMS</h1></div>
+            <div class="menu-content">
+                <div class="menu-items active">
+                     <ul>
+                    <li onclick="gotodashboard('dashboard-content')"><a href="#">Dashboard</a></li>
+                    <li onclick="gotoaddbooks('add-books-content')"><a href="#">Add books</a></li>
+                    <li onclick="gotoissuebooks('issue-books-content')"><a href="#">Issued books</a></li>
+                    <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar"></div>
+        <div class="dashboard" id="dashboard-content">
+           <div class="dashboard1">
+            <div class="dash totalbooks"><h2>Total books</h2><h2>1000</h2></div>
+            <div class="dash borrowedbooks"><h2>Borrowed books</h2><h2>200</h2></div>
+            <div class="dash returnedbooks"><h2>Returned books</h2><h2>100</h2></div>
+            <div class="dash overduebooks"><h2>Overdue books</h2><h2>50</h2></div>
+           </div>
+           <div class="dashboard2">
+                <div class="issue-table"></div>
+                <div class="overdue-table"></div>
+           </div>
+        </div>
+        <div class="add-books hidden" id="add-books-content">
+          
+        </div>
+        <div class="issue-books hidden" id="issue-books-content">
+sdfgfg
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
